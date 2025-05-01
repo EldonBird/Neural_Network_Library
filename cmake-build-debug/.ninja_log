@@ -1,0 +1,7 @@
+# ninja log v6
+1	53	1745963272817361309	CMakeFiles/Neural_Network.dir/main.cpp.o.ddi	cbc7312936aec605
+53	56	1745963272873448920	CMakeFiles/Neural_Network.dir/CXX.dd	e327e5e5c2866ccd
+53	56	1745963272873448920	/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Neural_Network.dir/CXXModules.json	e327e5e5c2866ccd
+53	56	1745963272873448920	CMakeFiles/Neural_Network.dir/main.cpp.o.modmap	e327e5e5c2866ccd
+56	354	1745963272873448920	CMakeFiles/Neural_Network.dir/main.cpp.o	a6453467a2c4330c
+355	397	1745963273171855571	Neural_Network	59d1a0c5dcb3bbf4
