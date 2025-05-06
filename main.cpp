@@ -1,6 +1,5 @@
 #include <iostream>
 #include <stdio.h>
-#include <pybind11/pybind11.h>
 
 PYBIND11_MODULE(simple_module, m) {
     m.def("simple_cpp_function", &simple_cpp_function);

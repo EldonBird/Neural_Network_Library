@@ -1,0 +1,6 @@
+#ifndef NEURAL_NETWORK_LIBRARY_H
+#define NEURAL_NETWORK_LIBRARY_H
+
+void hello(void);
+
+#endif //NEURAL_NETWORK_LIBRARY_H
