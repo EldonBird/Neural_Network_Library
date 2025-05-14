@@ -1,0 +1,27 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug",
+	"dir-cur-src" : "/home/eldon/Documents/GitHub/Neural_Network",
+	"dir-top-bld" : "/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug",
+	"dir-top-src" : "/home/eldon/Documents/GitHub/Neural_Network",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Neural_Network.dir",
+	"sources" : 
+	{
+		"CMakeFiles/Neural_Network.dir/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/eldon/Documents/GitHub/Neural_Network/main.cpp"
+		}
+	}
+}
