@@ -64,13 +64,13 @@ CMAKE_BINARY_DIR = /home/eldon/Documents/GitHub/Neural_Network/build
 
 # The main recursive "all" target.
 all: CMakeFiles/Neural_Network.dir/all
-all: CMakeFiles/module_name.dir/all
+all: CMakeFiles/Eldon_Neural_Network.dir/all
 all: pybind11/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/Neural_Network.dir/codegen
-codegen: CMakeFiles/module_name.dir/codegen
+codegen: CMakeFiles/Eldon_Neural_Network.dir/codegen
 codegen: pybind11/codegen
 .PHONY : codegen
 
@@ -80,7 +80,7 @@ preinstall: pybind11/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Neural_Network.dir/clean
-clean: CMakeFiles/module_name.dir/clean
+clean: CMakeFiles/Eldon_Neural_Network.dir/clean
 clean: pybind11/clean
 .PHONY : clean
 
@@ -110,7 +110,7 @@ pybind11/clean:
 CMakeFiles/Neural_Network.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Neural_Network.dir/build.make CMakeFiles/Neural_Network.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Neural_Network.dir/build.make CMakeFiles/Neural_Network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles --progress-num=1,2 "Built target Neural_Network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles --progress-num=3,4 "Built target Neural_Network"
 .PHONY : CMakeFiles/Neural_Network.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,7 +127,7 @@ Neural_Network: CMakeFiles/Neural_Network.dir/rule
 # codegen rule for target.
 CMakeFiles/Neural_Network.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Neural_Network.dir/build.make CMakeFiles/Neural_Network.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Neural_Network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles --progress-num=3,4 "Finished codegen for target Neural_Network"
 .PHONY : CMakeFiles/Neural_Network.dir/codegen
 
 # clean rule for target.
@@ -136,36 +136,36 @@ CMakeFiles/Neural_Network.dir/clean:
 .PHONY : CMakeFiles/Neural_Network.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/module_name.dir
+# Target rules for target CMakeFiles/Eldon_Neural_Network.dir
 
 # All Build rule for target.
-CMakeFiles/module_name.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_name.dir/build.make CMakeFiles/module_name.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_name.dir/build.make CMakeFiles/module_name.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles --progress-num=3,4 "Built target module_name"
-.PHONY : CMakeFiles/module_name.dir/all
+CMakeFiles/Eldon_Neural_Network.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Eldon_Neural_Network.dir/build.make CMakeFiles/Eldon_Neural_Network.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Eldon_Neural_Network.dir/build.make CMakeFiles/Eldon_Neural_Network.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles --progress-num=1,2 "Built target Eldon_Neural_Network"
+.PHONY : CMakeFiles/Eldon_Neural_Network.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/module_name.dir/rule: cmake_check_build_system
+CMakeFiles/Eldon_Neural_Network.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/module_name.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Eldon_Neural_Network.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles 0
-.PHONY : CMakeFiles/module_name.dir/rule
+.PHONY : CMakeFiles/Eldon_Neural_Network.dir/rule
 
 # Convenience name for target.
-module_name: CMakeFiles/module_name.dir/rule
-.PHONY : module_name
+Eldon_Neural_Network: CMakeFiles/Eldon_Neural_Network.dir/rule
+.PHONY : Eldon_Neural_Network
 
 # codegen rule for target.
-CMakeFiles/module_name.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_name.dir/build.make CMakeFiles/module_name.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles --progress-num=3,4 "Finished codegen for target module_name"
-.PHONY : CMakeFiles/module_name.dir/codegen
+CMakeFiles/Eldon_Neural_Network.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Eldon_Neural_Network.dir/build.make CMakeFiles/Eldon_Neural_Network.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eldon/Documents/GitHub/Neural_Network/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Eldon_Neural_Network"
+.PHONY : CMakeFiles/Eldon_Neural_Network.dir/codegen
 
 # clean rule for target.
-CMakeFiles/module_name.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_name.dir/build.make CMakeFiles/module_name.dir/clean
-.PHONY : CMakeFiles/module_name.dir/clean
+CMakeFiles/Eldon_Neural_Network.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Eldon_Neural_Network.dir/build.make CMakeFiles/Eldon_Neural_Network.dir/clean
+.PHONY : CMakeFiles/Eldon_Neural_Network.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "module_name.cpython-312-x86_64-linux-gnu.so"
+			"path" : "Eldon_Neural_Network.cpython-312-x86_64-linux-gnu.so"
 		}
 	],
 	"backtrace" : 4,
@@ -32,7 +32,7 @@
 			{
 				"command" : 3,
 				"file" : 3,
-				"line" : 14,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
@@ -56,7 +56,7 @@
 			{
 				"command" : 4,
 				"file" : 3,
-				"line" : 9,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
@@ -85,7 +85,7 @@
 			"defines" : 
 			[
 				{
-					"define" : "module_name_EXPORTS"
+					"define" : "Eldon_Neural_Network_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -118,7 +118,7 @@
 			]
 		}
 	],
-	"id" : "module_name::@6890427a1f51a3e7e1df",
+	"id" : "Eldon_Neural_Network::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -130,8 +130,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "module_name",
-	"nameOnDisk" : "module_name.cpython-312-x86_64-linux-gnu.so",
+	"name" : "Eldon_Neural_Network",
+	"nameOnDisk" : "Eldon_Neural_Network.cpython-312-x86_64-linux-gnu.so",
 	"paths" : 
 	{
 		"build" : ".",

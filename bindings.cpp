@@ -48,11 +48,7 @@ struct layer {
         else {
             return next->run(y);
         }
-
     }
-
-
-
 };
 
 struct network {
@@ -63,14 +59,9 @@ struct network {
     network(layer *initial) {
        start = initial;
     }
-
     int* run(int* x) {
-
         return start->run(x);
-
     }
-
-
 };
 
 int main(){
@@ -91,7 +82,7 @@ int main(){
 
 }
 
-PYBIND11_MODULE(module_name, handle){
+PYBIND11_MODULE(Eldon_Neural_Network, handle){
 
     handle.doc() = "module docs...?";
     handle.def("bindings_py", &main);

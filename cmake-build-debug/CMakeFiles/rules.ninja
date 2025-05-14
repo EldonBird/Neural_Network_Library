@@ -65,7 +65,7 @@ rule CXX_EXECUTABLE_LINKER__Neural_Network_Debug
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__module_name_Debug
+rule CXX_SCAN__Eldon_Neural_Network_Debug
   depfile = $DEP_FILE
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -74,8 +74,8 @@ rule CXX_SCAN__module_name_Debug
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__module_name_Debug
-  command = /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E cmake_ninja_dyndep --tdi=CMakeFiles/module_name.dir/CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+rule CXX_DYNDEP__Eldon_Neural_Network_Debug
+  command = /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E cmake_ninja_dyndep --tdi=CMakeFiles/Eldon_Neural_Network.dir/CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
   rspfile_content = $in
@@ -85,7 +85,7 @@ rule CXX_DYNDEP__module_name_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__module_name_scanned_Debug
+rule CXX_COMPILER__Eldon_Neural_Network_scanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -95,7 +95,7 @@ rule CXX_COMPILER__module_name_scanned_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__module_name_unscanned_Debug
+rule CXX_COMPILER__Eldon_Neural_Network_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -105,7 +105,7 @@ rule CXX_COMPILER__module_name_unscanned_Debug
 #############################################
 # Rule for linking CXX shared module.
 
-rule CXX_MODULE_LIBRARY_LINKER__module_name_Debug
+rule CXX_MODULE_LIBRARY_LINKER__Eldon_Neural_Network_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = $PRE_LINK && /usr/bin/c++ -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD

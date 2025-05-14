@@ -67,16 +67,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Neural_Network::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Neural_Network-Debug-53c0cdcd32b120477c25.json",
-					"name" : "Neural_Network",
+					"id" : "Eldon_Neural_Network::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Eldon_Neural_Network-Debug-c6a9f1e3b12988b6a0bd.json",
+					"name" : "Eldon_Neural_Network",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "module_name::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-module_name-Debug-b86027ac13efea6c79eb.json",
-					"name" : "module_name",
+					"id" : "Neural_Network::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Neural_Network-Debug-442834b3965bc04be579.json",
+					"name" : "Neural_Network",
 					"projectIndex" : 0
 				}
 			]

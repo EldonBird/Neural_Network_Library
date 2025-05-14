@@ -75,52 +75,52 @@ build Neural_Network: CXX_EXECUTABLE_LINKER__Neural_Network_Debug CMakeFiles/Neu
   TARGET_PDB = Neural_Network.dbg
 
 # =============================================================================
-# Object build statements for MODULE_LIBRARY target module_name
+# Object build statements for MODULE_LIBRARY target Eldon_Neural_Network
 
 
 #############################################
-# Order-only phony target for module_name
+# Order-only phony target for Eldon_Neural_Network
 
-build cmake_object_order_depends_target_module_name: phony || .
+build cmake_object_order_depends_target_Eldon_Neural_Network: phony || .
 
-build CMakeFiles/module_name.dir/bindings.cpp.o.ddi: CXX_SCAN__module_name_Debug /home/eldon/Documents/GitHub/Neural_Network/bindings.cpp || cmake_object_order_depends_target_module_name
-  DEFINES = -Dmodule_name_EXPORTS
-  DEP_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.ddi
+build CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.ddi: CXX_SCAN__Eldon_Neural_Network_Debug /home/eldon/Documents/GitHub/Neural_Network/bindings.cpp || cmake_object_order_depends_target_Eldon_Neural_Network
+  DEFINES = -DEldon_Neural_Network_EXPORTS
+  DEP_FILE = CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.ddi
   FLAGS = -g -std=gnu++20 -fPIC -fvisibility=hidden -fdiagnostics-color=always
   INCLUDES = -isystem /home/eldon/Documents/GitHub/Neural_Network/pybind11/include -isystem /usr/include/python3.12
-  OBJ_FILE = CMakeFiles/module_name.dir/bindings.cpp.o
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.ddi.i
+  OBJ_FILE = CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.ddi.i
 
-build CMakeFiles/module_name.dir/bindings.cpp.o: CXX_COMPILER__module_name_scanned_Debug /home/eldon/Documents/GitHub/Neural_Network/bindings.cpp | CMakeFiles/module_name.dir/bindings.cpp.o.modmap || cmake_object_order_depends_target_module_name CMakeFiles/module_name.dir/CXX.dd
-  DEFINES = -Dmodule_name_EXPORTS
-  DEP_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.modmap
+build CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o: CXX_COMPILER__Eldon_Neural_Network_scanned_Debug /home/eldon/Documents/GitHub/Neural_Network/bindings.cpp | CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.modmap || cmake_object_order_depends_target_Eldon_Neural_Network CMakeFiles/Eldon_Neural_Network.dir/CXX.dd
+  DEFINES = -DEldon_Neural_Network_EXPORTS
+  DEP_FILE = CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.modmap
   FLAGS = -g -std=gnu++20 -fPIC -fvisibility=hidden -fdiagnostics-color=always
   INCLUDES = -isystem /home/eldon/Documents/GitHub/Neural_Network/pybind11/include -isystem /usr/include/python3.12
-  OBJECT_DIR = CMakeFiles/module_name.dir
-  OBJECT_FILE_DIR = CMakeFiles/module_name.dir
-  dyndep = CMakeFiles/module_name.dir/CXX.dd
+  OBJECT_DIR = CMakeFiles/Eldon_Neural_Network.dir
+  OBJECT_FILE_DIR = CMakeFiles/Eldon_Neural_Network.dir
+  dyndep = CMakeFiles/Eldon_Neural_Network.dir/CXX.dd
 
-build CMakeFiles/module_name.dir/CXX.dd | /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/module_name.dir/CXXModules.json CMakeFiles/module_name.dir/bindings.cpp.o.modmap: CXX_DYNDEP__module_name_Debug CMakeFiles/module_name.dir/bindings.cpp.o.ddi | /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/module_name.dir/CXXDependInfo.json
+build CMakeFiles/Eldon_Neural_Network.dir/CXX.dd | /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Eldon_Neural_Network.dir/CXXModules.json CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.modmap: CXX_DYNDEP__Eldon_Neural_Network_Debug CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o.ddi | /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Eldon_Neural_Network.dir/CXXDependInfo.json
 
 
 # =============================================================================
-# Link build statements for MODULE_LIBRARY target module_name
+# Link build statements for MODULE_LIBRARY target Eldon_Neural_Network
 
 
 #############################################
-# Link the shared module module_name.cpython-312-x86_64-linux-gnu.so
+# Link the shared module Eldon_Neural_Network.cpython-312-x86_64-linux-gnu.so
 
-build module_name.cpython-312-x86_64-linux-gnu.so: CXX_MODULE_LIBRARY_LINKER__module_name_Debug CMakeFiles/module_name.dir/bindings.cpp.o
-  DEP_FILE = CMakeFiles/module_name.dir/link.d
+build Eldon_Neural_Network.cpython-312-x86_64-linux-gnu.so: CXX_MODULE_LIBRARY_LINKER__Eldon_Neural_Network_Debug CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o
+  DEP_FILE = CMakeFiles/Eldon_Neural_Network.dir/link.d
   LANGUAGE_COMPILE_FLAGS = -g
-  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/module_name.dir/link.d
-  OBJECT_DIR = CMakeFiles/module_name.dir
+  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/Eldon_Neural_Network.dir/link.d
+  OBJECT_DIR = CMakeFiles/Eldon_Neural_Network.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = module_name.cpython-312-x86_64-linux-gnu.so
-  TARGET_PDB = module_name.cpython-312-x86_64-linux-gnu.so.dbg
+  TARGET_FILE = Eldon_Neural_Network.cpython-312-x86_64-linux-gnu.so
+  TARGET_PDB = Eldon_Neural_Network.cpython-312-x86_64-linux-gnu.so.dbg
 
 
 #############################################
@@ -176,7 +176,7 @@ build pybind11/rebuild_cache: phony pybind11/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build module_name: phony module_name.cpython-312-x86_64-linux-gnu.so
+build Eldon_Neural_Network: phony Eldon_Neural_Network.cpython-312-x86_64-linux-gnu.so
 
 # =============================================================================
 # Folder targets.
@@ -186,7 +186,7 @@ build module_name: phony module_name.cpython-312-x86_64-linux-gnu.so
 #############################################
 # Folder: /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug
 
-build all: phony Neural_Network module_name.cpython-312-x86_64-linux-gnu.so pybind11/all
+build all: phony Neural_Network Eldon_Neural_Network.cpython-312-x86_64-linux-gnu.so pybind11/all
 
 # =============================================================================
 

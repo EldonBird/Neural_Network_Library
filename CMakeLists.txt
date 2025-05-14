@@ -5,10 +5,9 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(pybind11)
 
-# Optional: ensure includes work in all cases
 include_directories(${CMAKE_SOURCE_DIR}/pybind11/include)
 
 add_executable(Neural_Network main.cpp)
 
 # Python module (bindings.cpp must exist!)
-pybind11_add_module(module_name bindings.cpp)
+pybind11_add_module(Eldon_Neural_Network bindings.cpp)

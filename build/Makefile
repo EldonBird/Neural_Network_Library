@@ -130,24 +130,24 @@ Neural_Network/fast:
 .PHONY : Neural_Network/fast
 
 #=============================================================================
-# Target rules for targets named module_name
+# Target rules for targets named Eldon_Neural_Network
 
 # Build rule for target.
-module_name: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_name
-.PHONY : module_name
+Eldon_Neural_Network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Eldon_Neural_Network
+.PHONY : Eldon_Neural_Network
 
 # fast build rule for target.
-module_name/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_name.dir/build.make CMakeFiles/module_name.dir/build
-.PHONY : module_name/fast
+Eldon_Neural_Network/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Eldon_Neural_Network.dir/build.make CMakeFiles/Eldon_Neural_Network.dir/build
+.PHONY : Eldon_Neural_Network/fast
 
 bindings.o: bindings.cpp.o
 .PHONY : bindings.o
 
 # target to build an object file
 bindings.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_name.dir/build.make CMakeFiles/module_name.dir/bindings.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Eldon_Neural_Network.dir/build.make CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.o
 .PHONY : bindings.cpp.o
 
 bindings.i: bindings.cpp.i
@@ -155,7 +155,7 @@ bindings.i: bindings.cpp.i
 
 # target to preprocess a source file
 bindings.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_name.dir/build.make CMakeFiles/module_name.dir/bindings.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Eldon_Neural_Network.dir/build.make CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.i
 .PHONY : bindings.cpp.i
 
 bindings.s: bindings.cpp.s
@@ -163,7 +163,7 @@ bindings.s: bindings.cpp.s
 
 # target to generate assembly for a file
 bindings.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_name.dir/build.make CMakeFiles/module_name.dir/bindings.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Eldon_Neural_Network.dir/build.make CMakeFiles/Eldon_Neural_Network.dir/bindings.cpp.s
 .PHONY : bindings.cpp.s
 
 main.o: main.cpp.o
@@ -198,8 +198,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Eldon_Neural_Network"
 	@echo "... Neural_Network"
-	@echo "... module_name"
 	@echo "... bindings.o"
 	@echo "... bindings.i"
 	@echo "... bindings.s"

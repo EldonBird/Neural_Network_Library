@@ -1,3 +1,3 @@
-import module_name
+import Eldon_Neural_Network as ENN
 
-module_name.bindings_py()
+ENN.bindings_py()
