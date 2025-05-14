@@ -1,7 +1,19 @@
 # ninja log v6
-1	53	1745963272817361309	CMakeFiles/Neural_Network.dir/main.cpp.o.ddi	cbc7312936aec605
-53	56	1745963272873448920	CMakeFiles/Neural_Network.dir/CXX.dd	e327e5e5c2866ccd
-53	56	1745963272873448920	/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Neural_Network.dir/CXXModules.json	e327e5e5c2866ccd
-53	56	1745963272873448920	CMakeFiles/Neural_Network.dir/main.cpp.o.modmap	e327e5e5c2866ccd
-56	354	1745963272873448920	CMakeFiles/Neural_Network.dir/main.cpp.o	a6453467a2c4330c
-355	397	1745963273171855571	Neural_Network	59d1a0c5dcb3bbf4
+1	64	1747187110886557199	build.ninja	672047c4940755d9
+0	2638	1747186414456051022	CMakeFiles/module_name.dir/main.cpp.o	ec0d49e01a8ed5fd
+320	372	1747186975415653064	Neural_Network	59d1a0c5dcb3bbf4
+3322	3432	1747186978417593625	module_name.cpython-312-x86_64-linux-gnu.so	d5d69aa913da50a3
+0	209	1747186975095659400	CMakeFiles/module_name.dir/bindings.cpp.o.ddi	6fb22540678ec350
+209	214	1747186975310582333	CMakeFiles/module_name.dir/CXX.dd	1079a93b11eaaadc
+209	214	1747186975310582333	CMakeFiles/module_name.dir/bindings.cpp.o.modmap	1079a93b11eaaadc
+214	3322	1747186975310582333	CMakeFiles/module_name.dir/bindings.cpp.o	732eb7576a413aa7
+209	214	1747186975310582333	/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/module_name.dir/CXXModules.json	1079a93b11eaaadc
+1	320	1747186975097016489	CMakeFiles/Neural_Network.dir/main.cpp.o	e9713bda77ec15b
+2	182	1747187165844882541	CMakeFiles/module_name.dir/bindings.cpp.o.ddi	3a0dd04a04de36e3
+182	186	1747187166024878977	CMakeFiles/module_name.dir/CXX.dd	1079a93b11eaaadc
+182	186	1747187166024878977	/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/module_name.dir/CXXModules.json	1079a93b11eaaadc
+182	186	1747187166024878977	CMakeFiles/module_name.dir/bindings.cpp.o.modmap	1079a93b11eaaadc
+2	289	1747187165845753075	CMakeFiles/Neural_Network.dir/main.cpp.o	4ddb4d17948ab7ef
+289	330	1747187166131876859	Neural_Network	59d1a0c5dcb3bbf4
+187	3183	1747187166029878878	CMakeFiles/module_name.dir/bindings.cpp.o	3cd11c964b008db9
+3183	3264	1747187169025819558	module_name.cpython-312-x86_64-linux-gnu.so	d5d69aa913da50a3

@@ -49,22 +49,12 @@ cmake_ninja_workdir = /home/eldon/Documents/GitHub/Neural_Network/cmake-build-de
 
 build cmake_object_order_depends_target_Neural_Network: phony || .
 
-build CMakeFiles/Neural_Network.dir/main.cpp.o.ddi: CXX_SCAN__Neural_Network_Debug /home/eldon/Documents/GitHub/Neural_Network/main.cpp || cmake_object_order_depends_target_Neural_Network
-  DEP_FILE = CMakeFiles/Neural_Network.dir/main.cpp.o.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/Neural_Network.dir/main.cpp.o.ddi
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJ_FILE = CMakeFiles/Neural_Network.dir/main.cpp.o
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles/Neural_Network.dir/main.cpp.o.ddi.i
-
-build CMakeFiles/Neural_Network.dir/main.cpp.o: CXX_COMPILER__Neural_Network_scanned_Debug /home/eldon/Documents/GitHub/Neural_Network/main.cpp | CMakeFiles/Neural_Network.dir/main.cpp.o.modmap || cmake_object_order_depends_target_Neural_Network CMakeFiles/Neural_Network.dir/CXX.dd
+build CMakeFiles/Neural_Network.dir/main.cpp.o: CXX_COMPILER__Neural_Network_unscanned_Debug /home/eldon/Documents/GitHub/Neural_Network/main.cpp || cmake_object_order_depends_target_Neural_Network
   DEP_FILE = CMakeFiles/Neural_Network.dir/main.cpp.o.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles/Neural_Network.dir/main.cpp.o.modmap
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/eldon/Documents/GitHub/Neural_Network/pybind11/include
   OBJECT_DIR = CMakeFiles/Neural_Network.dir
   OBJECT_FILE_DIR = CMakeFiles/Neural_Network.dir
-  dyndep = CMakeFiles/Neural_Network.dir/CXX.dd
-
-build CMakeFiles/Neural_Network.dir/CXX.dd | /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Neural_Network.dir/CXXModules.json CMakeFiles/Neural_Network.dir/main.cpp.o.modmap: CXX_DYNDEP__Neural_Network_Debug CMakeFiles/Neural_Network.dir/main.cpp.o.ddi | /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Neural_Network.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -83,6 +73,54 @@ build Neural_Network: CXX_EXECUTABLE_LINKER__Neural_Network_Debug CMakeFiles/Neu
   PRE_LINK = :
   TARGET_FILE = Neural_Network
   TARGET_PDB = Neural_Network.dbg
+
+# =============================================================================
+# Object build statements for MODULE_LIBRARY target module_name
+
+
+#############################################
+# Order-only phony target for module_name
+
+build cmake_object_order_depends_target_module_name: phony || .
+
+build CMakeFiles/module_name.dir/bindings.cpp.o.ddi: CXX_SCAN__module_name_Debug /home/eldon/Documents/GitHub/Neural_Network/bindings.cpp || cmake_object_order_depends_target_module_name
+  DEFINES = -Dmodule_name_EXPORTS
+  DEP_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fPIC -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -isystem /home/eldon/Documents/GitHub/Neural_Network/pybind11/include -isystem /usr/include/python3.12
+  OBJ_FILE = CMakeFiles/module_name.dir/bindings.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.ddi.i
+
+build CMakeFiles/module_name.dir/bindings.cpp.o: CXX_COMPILER__module_name_scanned_Debug /home/eldon/Documents/GitHub/Neural_Network/bindings.cpp | CMakeFiles/module_name.dir/bindings.cpp.o.modmap || cmake_object_order_depends_target_module_name CMakeFiles/module_name.dir/CXX.dd
+  DEFINES = -Dmodule_name_EXPORTS
+  DEP_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/module_name.dir/bindings.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fPIC -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -isystem /home/eldon/Documents/GitHub/Neural_Network/pybind11/include -isystem /usr/include/python3.12
+  OBJECT_DIR = CMakeFiles/module_name.dir
+  OBJECT_FILE_DIR = CMakeFiles/module_name.dir
+  dyndep = CMakeFiles/module_name.dir/CXX.dd
+
+build CMakeFiles/module_name.dir/CXX.dd | /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/module_name.dir/CXXModules.json CMakeFiles/module_name.dir/bindings.cpp.o.modmap: CXX_DYNDEP__module_name_Debug CMakeFiles/module_name.dir/bindings.cpp.o.ddi | /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/module_name.dir/CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for MODULE_LIBRARY target module_name
+
+
+#############################################
+# Link the shared module module_name.cpython-312-x86_64-linux-gnu.so
+
+build module_name.cpython-312-x86_64-linux-gnu.so: CXX_MODULE_LIBRARY_LINKER__module_name_Debug CMakeFiles/module_name.dir/bindings.cpp.o
+  DEP_FILE = CMakeFiles/module_name.dir/link.d
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/module_name.dir/link.d
+  OBJECT_DIR = CMakeFiles/module_name.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = module_name.cpython-312-x86_64-linux-gnu.so
+  TARGET_PDB = module_name.cpython-312-x86_64-linux-gnu.so.dbg
 
 
 #############################################
@@ -108,7 +146,37 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/eldon/Documents/GitHub/Neural_Network/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build pybind11/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/pybind11 && /app/extra/clion/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build pybind11/edit_cache: phony pybind11/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build pybind11/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/pybind11 && /app/extra/clion/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/eldon/Documents/GitHub/Neural_Network -B/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build pybind11/rebuild_cache: phony pybind11/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build module_name: phony module_name.cpython-312-x86_64-linux-gnu.so
 
 # =============================================================================
 # Folder targets.
@@ -118,14 +186,14 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug
 
-build codegen: phony
+build all: phony Neural_Network module_name.cpython-312-x86_64-linux-gnu.so pybind11/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug
+# Folder: /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/pybind11
 
-build all: phony Neural_Network
+build pybind11/all: phony
 
 # =============================================================================
 # Built-in targets
@@ -134,14 +202,14 @@ build all: phony Neural_Network
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /home/eldon/Documents/GitHub/Neural_Network/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDependentOption.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindPackageMessage.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindPython.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindPython/Support.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/GNUInstallDirs.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake /home/eldon/Documents/GitHub/Neural_Network/CMakeLists.txt /home/eldon/Documents/GitHub/Neural_Network/pybind11/CMakeLists.txt /home/eldon/Documents/GitHub/Neural_Network/pybind11/tools/JoinPaths.cmake /home/eldon/Documents/GitHub/Neural_Network/pybind11/tools/pybind11Common.cmake /home/eldon/Documents/GitHub/Neural_Network/pybind11/tools/pybind11NewTools.cmake CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /home/eldon/Documents/GitHub/Neural_Network/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake: phony
+build /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeDependentOption.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Compiler/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindPackageMessage.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindPython.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/FindPython/Support.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/GNUInstallDirs.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Linker/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linker/Linux-GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU-C.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU-CXX.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-GNU.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/Linux.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake /app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake /home/eldon/Documents/GitHub/Neural_Network/CMakeLists.txt /home/eldon/Documents/GitHub/Neural_Network/pybind11/CMakeLists.txt /home/eldon/Documents/GitHub/Neural_Network/pybind11/tools/JoinPaths.cmake /home/eldon/Documents/GitHub/Neural_Network/pybind11/tools/pybind11Common.cmake /home/eldon/Documents/GitHub/Neural_Network/pybind11/tools/pybind11NewTools.cmake CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake: phony
 
 
 #############################################

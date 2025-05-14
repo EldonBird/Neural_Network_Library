@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/Neural_Network.dir/link.d CMakeFiles/Neural_Network.dir/main.cpp.o -o Neural_Network

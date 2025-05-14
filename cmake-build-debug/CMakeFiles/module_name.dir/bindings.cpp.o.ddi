@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/module_name.dir/bindings.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

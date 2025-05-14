@@ -883,3 +883,37 @@ events:
       Running the CXX compiler's linker: "/usr/lib/gcc/x86_64-unknown-linux-gnu/14.2.0/../../../../x86_64-unknown-linux-gnu/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.44
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/app/extra/clion/bin/cmake/linux/x64/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "pybind11/tools/pybind11Common.cmake:318 (check_cxx_compiler_flag)"
+      - "pybind11/tools/pybind11Common.cmake:363 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "pybind11/tools/pybind11Common.cmake:419 (_pybind11_generate_lto)"
+      - "pybind11/CMakeLists.txt:238 (include)"
+    checks:
+      - "Performing Test HAS_FLTO"
+    directories:
+      source: "/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7OjIbD"
+      binary: "/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7OjIbD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_FLTO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7OjIbD'
+        
+        Run Build Command(s): /app/extra/clion/bin/ninja/linux/x64/ninja -v cmTC_9b686
+        [1/2] /usr/bin/c++ -DHAS_FLTO  -flto -fno-fat-lto-objects -o CMakeFiles/cmTC_9b686.dir/src.cxx.o -c /home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7OjIbD/src.cxx
+        [2/2] : && /usr/bin/c++   CMakeFiles/cmTC_9b686.dir/src.cxx.o -o cmTC_9b686  -flto && :
+        
+      exitCode: 0
+...

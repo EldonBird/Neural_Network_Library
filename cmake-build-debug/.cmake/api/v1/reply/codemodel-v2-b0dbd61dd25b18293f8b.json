@@ -6,23 +6,43 @@
 			[
 				{
 					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.31"
+						"string" : "3.14"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
+				},
+				{
+					"build" : "pybind11",
+					"jsonFile" : "directory-pybind11-Debug-b6193beaf7d644e9e508.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "pybind11"
 				}
 			],
 			"name" : "Debug",
 			"projects" : 
 			[
 				{
+					"childIndexes" : 
+					[
+						1
+					],
 					"directoryIndexes" : 
 					[
 						0
@@ -30,8 +50,17 @@
 					"name" : "Neural_Network",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "pybind11",
+					"parentIndex" : 0
 				}
 			],
 			"targets" : 
@@ -39,8 +68,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Neural_Network::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Neural_Network-Debug-95fee227e26cecde9d87.json",
+					"jsonFile" : "target-Neural_Network-Debug-53c0cdcd32b120477c25.json",
 					"name" : "Neural_Network",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_name::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_name-Debug-b86027ac13efea6c79eb.json",
+					"name" : "module_name",
 					"projectIndex" : 0
 				}
 			]
