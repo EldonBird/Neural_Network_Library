@@ -5,11 +5,25 @@
 #include <stdio.h>
 
 
+#include <pybind11/numpy.h>
 #include <pybind11/pybind11.h>
 
 namespace py = pybind11;
 
-struct layer {
+
+
+int test;
+
+int get_test() {
+    return test;
+}
+
+int set_test(int* aa) {
+    test = *aa;
+}
+
+class layer {
+public:
 
     layer* previous;
     layer* next;
@@ -49,9 +63,13 @@ struct layer {
             return next->run(y);
         }
     }
+
+private:
 };
 
-struct network {
+class network {
+
+public:
 
     layer* start;
     int depth;
@@ -62,23 +80,12 @@ struct network {
     int* run(int* x) {
         return start->run(x);
     }
+private:
 };
 
 int main(){
 
-    int* test = new int[10];
-    for (int i = 0; i < 10; i++) {
-        test[i] = 0 + i;
-    }
-
-    for (int i = 0; i < 10; i++) {
-        std::cout << test[i] << std::endl;
-    }
-
-    std::cout << test[0] << std::endl;
-    std::cout << test << std::endl;
-    std::cout << &test << std::endl;
-    std::cout << &test[0] << std::endl;
+    return 1;
 
 }
 
@@ -86,4 +93,12 @@ PYBIND11_MODULE(Eldon_Neural_Network, handle){
 
     handle.doc() = "module docs...?";
     handle.def("bindings_py", &main);
+
+    py::class_<network>(handle, "Network")
+            .def(py::init<const std::string&>())
+            .def("getName", &network::getName)
+            .def("bark", &network::bark);
+
+    //py:class
+    
 }
