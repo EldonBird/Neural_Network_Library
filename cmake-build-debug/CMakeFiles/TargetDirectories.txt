@@ -1,6 +1,0 @@
-/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Neural_Network.dir
-/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/Eldon_Neural_Network.dir
-/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/pybind11/CMakeFiles/edit_cache.dir
-/home/eldon/Documents/GitHub/Neural_Network/cmake-build-debug/pybind11/CMakeFiles/rebuild_cache.dir
