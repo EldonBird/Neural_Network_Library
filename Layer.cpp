@@ -38,6 +38,8 @@ public:
         cost_gradient_w = new double*[*size_in];
         for (int i = 0; i < *size_in; i++){ cost_gradient_w[i] = new double[*size_out]; }
 
+        start_with_random_weights();
+
     }
 
     Layer(int* si, int* so, double* b, double** w) {
@@ -103,9 +105,6 @@ public:
             activations[x] = activation_function(weighted_input);
         }
 
-        
-
-        
         return activations;
     
     }
@@ -117,6 +116,35 @@ public:
     double node_cost(double output_activation, double expected_output) {
         double error = output_activation - expected_output;
         return error * error;
+    }
+
+    double* back_propigation_error(double* delta_next) {
+        double* delta = new double[*size_in];
+
+        for (int i = 0; i < *size_in; i++ ) {
+
+            delta[i] = 0;
+            for (int j =0; j < *size_out; j++) {
+                delta[i] += weights[i][j] * delta_next[j];
+            }
+            delta[i] *= activation_function_derivative(last)
+        }
+
+        
+    }
+
+    void back_propigation(double* input, double* delta, double learn_rate) {
+
+        for (int i = 0; i < *size_out; i++) {
+
+            cost_gradient_b[i] = delta[i];
+            for (int j = 0; j < *size_in; j+) {
+
+                cost_gradient_w[i][j] = inputs[j] * delta[i];
+            }
+        }
+        apply_gradients(learn_rate);
+        
     }
 
 };

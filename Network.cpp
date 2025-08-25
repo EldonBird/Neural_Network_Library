@@ -36,17 +36,16 @@ public:
         
     }
 
-    double cost(double input, double expected_output) {
+    double cost(double* output, double* expected, int size) {
 
-        double* output = calcuate_output(input);
-        Layer output_layer = layers[*width - 1];
-        double cost = 0;
-
-        for (int out = 0; out < *width; out++) {
-            cost += output_layer.node_cost(output[out], expected_output[out]);
+        double* total = 0;
+       
+        for (int i = 0; i < *width; i++) {
+            double error = output[i] - expected[i];
+            total += error * error;
         }
 
-        return cost;
+        return total;
     }
 
 
@@ -73,27 +72,6 @@ public:
 
     
 
-    void Learn(double* training_data, double rate) {
-
-        const double h = 0.0001;
-        double original_cost = cost(training_data);
-
-        for (int i = 0; i < *width; i++) {
-            for (int x = 0; x < layers[i].size_in; x++) {
-
-                layers[i].weights[x][x] += h;
-                double delta_cost = cost(training_data) - original_cost;
-
-                
-
-
-                
-            }
-
-            
-        }
-
-        
-    }
+    
 
 };
