@@ -23,7 +23,7 @@ public:
 
         number_layers = nl - 1;
         width = number_layers;
-        layers = new Layer[number_layers];
+        layers = (Layer*)malloc(nl);
 
         for (int i = 0; i < number_layers; i++) {
             layers[i] = Layer(&layer_sizes[i], &layer_sizes[i+1]);
@@ -32,7 +32,10 @@ public:
     }
 
     ~Network(){
+
         delete[] layers;
+        
+
     }
 
     double cost(double* output, double* expected, int size) {

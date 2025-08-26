@@ -293,6 +293,8 @@ int main() {
         }
     }
 
+    free(input1);
+
     return 1;
 }
 
