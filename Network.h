@@ -22,6 +22,5 @@ public:
     void batch(double** inputs, double** expected_outputs, int batch_size, int output_size, double learning_rate);
 };
 
-void example_usage();
 
 #endif

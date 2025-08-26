@@ -6,12 +6,8 @@
 #include <bits/regex_error.h>
 
 
-#include <pybind11/numpy.h>
-#include <pybind11/pybind11.h>
 
 class Layer;
-namespace py = pybind11;
-
 
 class Network{
 public:
@@ -20,6 +16,8 @@ public:
     int number_layers;
     Layer* layers;
     
+
+
 
     Network(int* layer_sizes, int nl) {
 
@@ -54,7 +52,7 @@ public:
         double* current = inputs;
         
         for (int i = 0; i < number_layers; i++) {
-            current = layers[i]->calculate_outputs(current);
+            current = layers[i].calculate_outputs(current);
         }
 
         return current;
@@ -70,12 +68,12 @@ public:
                 errors = layers[i].calculate_output_layer(expected);
             }
             else {
-                double* new_error = layers[i+1].hideen_layer_backpropigation(errors);
+                double* new_error = layers[i+1].hidden_layer_backpropigation(errors);
                 delete[] errors;
                 errors = new_error;
             }
 
-            layers[i].update_gradients(errors);
+            layers[i].update_gradient(errors);
             layers[i].apply_gradients(learning_rate);
         }
         delete[] errors;

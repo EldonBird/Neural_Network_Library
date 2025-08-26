@@ -5,10 +5,7 @@
 #include <vector>
 
 
-#include <pybind11/numpy.h>
-#include <pybind11/pybind11.h>
 
-namespace py = pybind11;
 
 
 class Layer {
@@ -46,6 +43,9 @@ public:
 
         start_with_random_weights();
 
+    }
+    Layer() {
+        
     }
 
 
@@ -138,7 +138,7 @@ public:
             double node_error = errors[i] * activation_function_derivative(last_weighted_inputs[i]);
 
             cost_gradient_b[i] = node_error;
-            for (int i = 0; i < *size_in; i++) {
+            for (int j = 0; j < *size_in; j++) {
                 cost_gradient_w[j][i] = last_inputs[j] * node_error;
             }
         }

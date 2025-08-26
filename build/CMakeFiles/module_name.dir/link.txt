@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -flto -Wl,--dependency-file=CMakeFiles/module_name.dir/link.d -shared  -o module_name.cpython-313-x86_64-linux-gnu.so CMakeFiles/module_name.dir/bindings.cpp.o

@@ -17,6 +17,7 @@ public:
 
 
     Layer(int* si, int* so);
+    Layer();
     
     ~Layer();
 
